@@ -4,10 +4,12 @@
 \alias{add_pcoord}
 \title{Principle coordinate analysis of phylogenies}
 \usage{
-add_pcoord(D)
+add_pcoord(D, correction = "none")
 }
 \arguments{
 \item{D}{A list with objects H, P, and HP, returned by prepare_paco_data}
+
+\item{correction}{Choose the method with which to correct negative eigenvalues ('none', cailliez', 'lingoes'). Default is 'none'.}
 }
 \value{
 The input list with added objects for the principal coordinates of the objects
