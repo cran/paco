@@ -8,7 +8,7 @@
 data(gopherlice)
 }
 \description{
-Lice phylogeny
+One part of example data. The phylogeny of chewing lice.
 }
 \keyword{datasets}
 

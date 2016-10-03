@@ -3,12 +3,12 @@
 \docType{data}
 \name{gl_links}
 \alias{gl_links}
-\title{Gopher/lice phylogenies}
+\title{Gopher-lice interactions}
 \usage{
 data(gopherlice)
 }
 \description{
-Gopher/lice phylogenies
+One part of example data. The associations between pocket gophers and their chewing lice ectoparasites.
 }
 \keyword{datasets}
 
