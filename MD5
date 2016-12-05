@@ -1,9 +1,9 @@
-3184e0844cf5b886a108f194be971da2 *DESCRIPTION
+2a3e8ad216bcc480a684f4fde6106eca *DESCRIPTION
 53052baae1760d1750e1267a29a62ae2 *LICENSE
 1ed09f07cf6ad55b0e65af42e4ec1a57 *NAMESPACE
 e7bda5c771bc9eef99e91d2e0d3008b7 *R/PACo.r
 67e274086c346c527539101a877c2d23 *R/add_pcoord.r
-e3c6778c3ecbe5d8f100e5c3dc4a20ae *R/coordpcoa.r
+0571ca9e0c93f45c12374a21ed4e2569 *R/coordpcoa.r
 8f48afff3da2ec82abd1262a5d124357 *R/paco_data.r
 19a56b7264fa44ba2cabe1c56cc67e0c *R/paco_links.r
 0e8c687538c724e490ef999b75f5a5b1 *R/prepare_data.r
