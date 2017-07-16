@@ -20,7 +20,8 @@ coordpcoa <-function (D, correction = "none", rn = NULL)
     epsilon <- sqrt(.Machine$double.eps)
     if (length(rn) != 0) {
         names <- rn
-    }else {
+    }
+    else {
         names <- rownames(D)
     }
     CORRECTIONS <- c("none", "lingoes", "cailliez")
@@ -29,12 +30,10 @@ coordpcoa <-function (D, correction = "none", rn = NULL)
     delta1 <- centre((-0.5 * D^2), n)
     trace <- sum(diag(delta1))
     D.eig <- eigen(delta1)
-    #min.eig <- min(D.eig$values)
-    D.eig$values <- zapsmall(vegan::eigenvals(D.eig))
-    D.eig$values <- D.eig$values
-    zero.eig <- which(D.eig$values < epsilon)
     min.eig <- min(D.eig$values)
-    if(min.eig > -epsilon){
+    D.eig$values <- vegan::eigenvals(D.eig)
+    zero.eig <- which(D.eig$values < epsilon)
+    if (min.eig > -epsilon) {
         correct <- 1
         eig <- D.eig$values
         k <- length(which(eig > epsilon))
@@ -53,7 +52,8 @@ coordpcoa <-function (D, correction = "none", rn = NULL)
         note <- paste("There were no negative eigenvalues. No correction was applied")
         out <- (list(correction = c(correction, correct), note = note,
             values = res, vectors = vectors, trace = trace))
-    }else{
+    }
+    else {
         k <- n
         eig <- D.eig$values
         rel.eig <- eig/trace
@@ -100,7 +100,8 @@ coordpcoa <-function (D, correction = "none", rn = NULL)
                 bs <- bstick.def(k2)
                 bs <- c(bs, rep(0, (k - k2)))
                 cum.bs <- cumsum(bs)
-            }else {
+            }
+            else {
                 if (correct == 2)
                   cat("Problem! Negative eigenvalues are still present after Lingoes","\n")
                 if (correct == 3)
@@ -119,7 +120,8 @@ coordpcoa <-function (D, correction = "none", rn = NULL)
             out <- (list(correction = c(correction, correct),
                 note = note, values = res, vectors = vectors,
                 trace = trace, vectors.cor = vectors.cor, trace.cor = trace.cor))
-        }else{
+        }
+        else {
             note <- "No correction was applied to the negative eigenvalues"
             bs <- bstick.def(k3)
             bs <- c(bs, rep(0, (k - k3)))
@@ -137,9 +139,7 @@ coordpcoa <-function (D, correction = "none", rn = NULL)
                 note = note, values = res, vectors = vectors,
                 trace = trace))
         }
-        }
-
-
+    }
     class(out) <- "pcoa"
     out
 }
