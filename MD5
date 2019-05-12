@@ -1,9 +1,9 @@
-633c29b7efeae86c8bc010ba73381747 *DESCRIPTION
+1ae84814034e19989f41a80af50726c1 *DESCRIPTION
 53052baae1760d1750e1267a29a62ae2 *LICENSE
 1ed09f07cf6ad55b0e65af42e4ec1a57 *NAMESPACE
 e7bda5c771bc9eef99e91d2e0d3008b7 *R/PACo.r
-67e274086c346c527539101a877c2d23 *R/add_pcoord.r
-e3c6778c3ecbe5d8f100e5c3dc4a20ae *R/coordpcoa.r
+b6f1deb8a180252d92012bcac30b543b *R/add_pcoord.r
+a93e3ec66cf7cdffa058174e0ebdcfca *R/coordpcoa.r
 8f48afff3da2ec82abd1262a5d124357 *R/paco_data.r
 11aaa777d15e731595d38846382d7e9b *R/paco_links.r
 0e8c687538c724e490ef999b75f5a5b1 *R/prepare_data.r
@@ -11,7 +11,7 @@ dc92cbb2e174b192a21c097d3411e548 *R/residuals_paco.r
 a2a088796bcc8f85138dcf9ef0bca504 *README.md
 3cb6b709b11aaac8b1dfab58b9ec63ec *data/gopherlice.rda
 87d18d8f616befb5eba31c2ed6c35e4e *man/PACo.Rd
-13fa498d62018d9aa97a651bb1c06da1 *man/add_pcoord.Rd
+70ef466ddebda99c0f9766193dadc97a *man/add_pcoord.Rd
 123fd450ecfcd3b8a879e0104707cede *man/gl_links.Rd
 ecd651b30a2444063ff7cb91f08dec1b *man/gophertree.Rd
 ba5c0beecc32373003a56c0ad1d99305 *man/licetree.Rd
